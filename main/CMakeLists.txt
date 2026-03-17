@@ -2,8 +2,8 @@ set(LV_DEMO_DIR ../managed_components/lvgl__lvgl/demos)
 file(GLOB_RECURSE LV_DEMOS_SOURCES ${LV_DEMO_DIR}/*.c)
 
 idf_component_register(
-    SRCS main.c ${LV_DEMOS_SOURCES}
-    INCLUDE_DIRS . ${LV_DEMO_DIR}
+    SRCS "main.c" "ui_face.c" "network_manager.c" "sound_generator.c" ${LV_DEMOS_SOURCES}
+    INCLUDE_DIRS "." "include" ${LV_DEMO_DIR}
     PRIV_REQUIRES driver nvs_flash esp_wifi esp_event esp_netif lwip
 )
 

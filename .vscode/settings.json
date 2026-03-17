@@ -16,5 +16,6 @@
     "--query-driver=**",
     "--compile-commands-dir=/home/rehaell/Documents/github/unamed-roboto/build"
   ],
-  "idf.flashType": "UART"
+  "idf.flashType": "UART",
+  "idf.currentSetup": "/home/rehaell/esp/v5.5.2/esp-idf"
 }
